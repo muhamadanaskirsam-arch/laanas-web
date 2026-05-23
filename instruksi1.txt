@@ -1,0 +1,225 @@
+Kamu adalah senior frontend developer dan political branding strategist.
+Bangun personal website untuk Muhamad Anas Kirsam Nur — seorang anak muda
+dari Kendari yang bekerja sebagai ASN dan sedang belajar membangun sesuatu
+yang bermanfaat bagi daerahnya.
+
+IDENTITAS:
+Nama lengkap: Muhamad Anas Kirsam Nur
+Nama panggilan: La Anas
+Lahir: Kendari, 26 Agustus 2002
+Jabatan: ASN · Penata Keprotokolan Setda Prov. Sulawesi Tenggara
+Latar: Alumni IPDN Angkatan 32 · HIPMI PT Sultra
+Email: anasm5201@gmail.com
+WA: 085279722605
+Instagram: @anas.kirsamnur
+TikTok: @anass.kirsamnur
+Foto: foto-la-anas.png (gunakan placeholder jika belum ada)
+
+TONE & KARAKTER WEBSITE:
+- Grounded — tidak ada klaim berlebihan
+- Merangkul — terasa seperti diajak, bukan diceramahi
+- Jujur — akui masih belajar, masih dalam perjalanan
+- Manusiawi — ada sisi personal yang nyata
+- Tidak ada bahasa NPD seperti "terbukti", "bukan klaim", "ini buktinya"
+- Tidak ada timeline politik yang dipajang
+- Tidak ada angka yang dilebih-lebihkan
+- Berbicara seperti orang yang rendah hati tapi bergerak nyata
+
+DESAIN:
+- Background: #0A0A0A
+- Aksen primer: #C0392B (merah bata)
+- Aksen sekunder: #1C7A50 (hijau)
+- Teks utama: #F0EDE6
+- Teks sekunder: rgba(240,237,230,0.55)
+- Font heading: DM Sans, weight 700
+- Font body: DM Sans, weight 300, line-height 1.8
+- Font label: Space Mono
+- Mobile responsive, breakpoint 768px
+- Smooth scroll, fade-in on scroll dengan IntersectionObserver
+- Semua dalam SATU file index.html — CSS dan JS inline
+
+STRUKTUR HALAMAN:
+
+SECTION 1 — HERO (full viewport)
+Layout dua kolom — foto kiri, konten kanan.
+
+FOTO KIRI:
+- src="foto-la-anas.png"
+- Tinggi penuh viewport
+- object-fit: cover, object-position: top center
+- Gradient tipis di kanan untuk blend ke background
+- Jika foto belum ada: div gelap dengan inisial "LA" merah di tengah
+- Komentar di kode: ganti dengan foto-la-anas.png
+
+KONTEN KANAN:
+- Label Space Mono kecil merah: "KENDARI, SULAWESI TENGGARA · 2002"
+- Nama: "Muhamad Anas Kirsam Nur" — DM Sans 700, clamp(1.8rem,3.5vw,3rem)
+- Nama panggilan kecil di bawah: "La Anas" — Space Mono, hijau
+- Satu kalimat sederhana: "Masih belajar. Tidak berhenti bergerak."
+- Paragraf: "ASN muda dari Kendari yang sedang mencoba membangun
+  sesuatu yang bermanfaat — dari dalam sistem, bersama masyarakat,
+  pelan tapi nyata."
+- Dua tombol: "Kenali Saya" (merah, scroll ke about) dan
+  "Hubungi Saya" (outline putih, buka WA)
+
+Di mobile: foto full width di atas, konten di bawah.
+
+SECTION 2 — TENTANG
+Background: #0f0f0f
+Judul: "Dari Kendari."
+
+Layout dua kolom — teks kiri, timeline kanan.
+
+TEKS KIRI — tiga paragraf natural, tidak heroik:
+Para 1:
+"Nama saya Muhamad Anas Kirsam Nur. Lahir dan besar di Kendari,
+Sulawesi Tenggara. Saya masuk IPDN bukan karena sudah tahu mau
+jadi apa — tapi karena percaya bahwa melayani adalah pilihan
+yang layak diperjuangkan."
+
+Para 2:
+"Sekarang saya bekerja di Setda Provinsi Sultra. Di sela-sela
+pekerjaan, saya mencoba membangun beberapa hal kecil — sistem
+digital untuk pemerintahan, komunitas untuk anak muda, dan
+platform belajar untuk yang mau masuk kedinasan. Semuanya masih
+dalam proses. Masih banyak yang harus diperbaiki."
+
+Para 3:
+"Saya percaya bahwa perubahan tidak harus datang dari orang yang
+paling hebat. Cukup dari orang yang mau mulai — dan tidak berhenti
+meski jalannya tidak selalu jelas."
+
+TIMELINE KANAN — sederhana, faktual:
+2002 — Lahir di Kendari, Sulawesi Tenggara
+2020 — Masuk IPDN, memilih jalan pengabdian
+2024 — Lulus, mulai kerja di Setda Prov. Sultra
+2025 — Mulai bangun Sigap Sultra dari nol
+2026 — Masih bergerak, masih belajar
+
+SECTION 3 — YANG SEDANG DIBANGUN
+Judul: "Yang sedang saya coba bangun."
+Subjudul: "Semuanya masih dalam perjalanan. Tapi bergerak."
+
+Empat kartu dalam grid 2x2:
+
+KARTU 1 — SIGAP SULTRA
+Aksen: hijau
+Label: "INOVASI PEMERINTAHAN"
+Judul: "Sigap Sultra"
+Deskripsi: "Sistem digital untuk administrasi pemerintahan
+berbasis AI. Dimulai dari kebutuhan nyata yang saya lihat
+setiap hari di tempat kerja."
+Link: sigap-partner.vercel.app
+Badge: "Berjalan"
+
+KARTU 2 — RISE & SHINE
+Aksen: merah
+Label: "KOMUNITAS"
+Judul: "Rise & Shine"
+Deskripsi: "Komunitas untuk siapapun yang ingin ikut
+menyelesaikan masalah nyata di sekitar mereka —
+bukan hanya membicarakannya."
+Tagline: "The world won't fix itself."
+Link: instagram.com/riseandshineid
+Badge: "Berkembang"
+
+KARTU 3 — CORPS PRAJA ACADEMY
+Aksen: hijau
+Label: "PENDIDIKAN"
+Judul: "Corps Praja Academy"
+Deskripsi: "Platform belajar untuk adik-adik yang mau
+masuk kedinasan. Dibuat karena saya tahu betapa sulitnya
+perjalanan itu."
+Link: corps-praja-academy.vercel.app
+Badge: "Aktif"
+
+KARTU 4 — ECLIPSE ASIA
+Aksen: putih
+Label: "BISNIS"
+Judul: "Eclipse Asia"
+Deskripsi: "Bisnis kecil yang kami bangun bersama —
+jersey, merchandise, dan produk komunitas."
+Link: linktr.ee/EclipseStudio_
+Badge: "Aktif"
+
+SECTION 4 — RISE AND SHINE FEATURE
+Background: #C0392B penuh
+Teks: putih
+
+Judul: "The world won't fix itself."
+Paragraf:
+"Rise and Shine lahir dari satu keresahan sederhana —
+terlalu banyak masalah nyata yang tidak pernah terdengar
+karena tidak ada yang mau turun dan mendengarnya.
+Kami mencoba jadi komunitas yang melakukan itu.
+Bukan yang paling pintar. Tapi yang mau bergerak."
+
+Tiga pilar dalam satu baris — sederhana:
+DENGAR — Turun ke lapangan. Cari masalah nyata.
+DISKUSI — Duduk bersama. Cari solusi bersama.
+BANGUN — Eksekusi. Sekecil apapun, mulai.
+
+Tombol putih outline: "Ikut Bergerak Bersama"
+Link ke instagram.com/riseandshineid
+
+SECTION 5 — SIGAP SHOWCASE
+Judul: "Sigap Sultra — inovasi kecil yang sedang berjalan."
+Paragraf singkat:
+"Dimulai dari masalah nyata yang saya temui di tempat
+kerja setiap hari. Masih jauh dari sempurna — tapi sudah
+mulai dipakai dan sudah mulai membantu."
+
+Tiga kartu status sederhana:
+Kartu 1: Pemprov Sultra — Aktif berjalan — badge hijau
+Kartu 2: IMIPAS — Pilot project — badge amber
+Kartu 3: Kab. Batu, Jawa Timur — Dalam penjajakan — badge biru
+
+Tombol outline: "Lihat Lebih Lanjut" → sigap-partner.vercel.app
+
+SECTION 6 — PENUTUP & KONTAK
+Background: #111111
+Judul: "Kalau kamu mau ngobrol."
+
+Paragraf:
+"Saya tidak punya banyak jawaban. Tapi saya selalu
+terbuka untuk berdiskusi — tentang inovasi, tentang
+daerah, tentang masalah yang mungkin bisa kita selesaikan
+bersama. Pintu selalu terbuka."
+
+Dua kolom kontak:
+Kiri — kartu sederhana:
+WhatsApp: 085279722605 → wa.me/6285279722605
+Email: anasm5201@gmail.com
+Instagram: @anas.kirsamnur → instagram.com/anas.kirsamnur
+TikTok: @anass.kirsamnur → tiktok.com/@anass.kirsamnur
+
+Kanan — satu quote penutup:
+"Masih banyak yang harus dipelajari.
+Tapi hari ini lebih baik dari kemarin —
+dan itu sudah cukup untuk terus melangkah."
+
+FOOTER:
+Background: #050505
+Kiri: "Muhamad Anas Kirsam Nur © 2026 · Kendari, Sulawesi Tenggara"
+Kanan: "The world won't fix itself."
+
+META TAGS SEO:
+title: "Muhamad Anas Kirsam Nur — La Anas | Kendari, Sulawesi Tenggara"
+description: "ASN muda dari Kendari yang sedang membangun
+inovasi digital pemerintahan, komunitas Rise and Shine,
+dan Corps Praja Academy. Masih belajar, tidak berhenti bergerak."
+keywords: "Muhamad Anas Kirsam Nur, La Anas, Sigap Sultra,
+Rise and Shine, ASN Sulawesi Tenggara, IPDN, inovator muda"
+og:title, og:description, og:image untuk social sharing
+
+CATATAN FOTO:
+Foto belum tersedia. Gunakan placeholder:
+div background #1a1a1a, inisial "LA" warna #C0392B di tengah,
+font-size 4rem, font-weight 700.
+Semua img src="foto-la-anas.png" dengan onerror fallback.
+Komentar di kode: ganti dengan foto-la-anas.png
+
+SETELAH SELESAI:
+git add .
+git commit -m "Build laanas personal website - grounded version"
+git push origin main
