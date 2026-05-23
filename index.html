@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhamad Anas Kirsam Nur — La Anas | Kendari, Sulawesi Tenggara</title>
-  <meta name="description" content="ASN muda dari Kendari yang sedang membangun inovasi digital pemerintahan, komunitas Rise and Shine, dan Corps Praja Academy. Masih belajar, tidak berhenti bergerak." />
-  <meta name="keywords" content="Muhamad Anas Kirsam Nur, La Anas, Sigap Sultra, Rise and Shine, ASN Sulawesi Tenggara, IPDN, inovator muda" />
-  <meta property="og:title" content="Muhamad Anas Kirsam Nur — La Anas | Kendari, Sulawesi Tenggara" />
-  <meta property="og:description" content="ASN muda dari Kendari yang sedang membangun inovasi digital pemerintahan, komunitas Rise and Shine, dan Corps Praja Academy. Masih belajar, tidak berhenti bergerak." />
+  <title>Muhamad Anas Kirsam Nur · La Anas · Kendari, Sulawesi Tenggara</title>
+  <meta name="description" content="ASN muda dari Kendari yang sedang membangun inovasi digital pemerintahan, komunitas Rise and Shine, Corps Praja, dan bergerak untuk Indonesia yang lebih baik. Masih belajar, tidak berhenti bergerak." />
+  <meta name="keywords" content="Muhamad Anas Kirsam Nur, La Anas, Sigap Sultra, Rise and Shine, Corps Praja Academy, ASN Sulawesi Tenggara, IPDN, inovator muda Kendari" />
+  <meta property="og:title" content="Muhamad Anas Kirsam Nur · La Anas · Kendari, Sulawesi Tenggara" />
+  <meta property="og:description" content="ASN muda dari Kendari yang sedang membangun inovasi digital pemerintahan, komunitas Rise and Shine, Corps Praja, dan bergerak untuk Indonesia yang lebih baik. Masih belajar, tidak berhenti bergerak." />
   <meta property="og:image" content="foto-la-anas.png" />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;0,9..40,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,48 +53,18 @@
       transform: translateY(0);
     }
 
-    /* LABEL */
-    .label {
-      font-family: var(--font-label);
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
-    /* BUTTONS */
-    .btn {
-      display: inline-block;
-      font-family: var(--font-label);
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.75rem 1.75rem;
-      border-radius: 2px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: opacity 0.2s, transform 0.2s;
-    }
-    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
-    .btn-red { background: var(--red); color: var(--text); border: none; }
-    .btn-outline { background: transparent; color: var(--text); border: 1.5px solid rgba(240,237,230,0.5); }
-    .btn-outline:hover { border-color: var(--text); }
-    .btn-white-outline { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.6); }
-    .btn-white-outline:hover { border-color: #fff; }
-
-    /* ============================
-       SECTION 1 — HERO
-    ============================= */
+    /* HERO */
     #hero {
-      min-height: 100vh;
       display: grid;
-      grid-template-columns: 45% 1fr;
-      position: relative;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
     }
 
     .hero-photo {
       position: relative;
       overflow: hidden;
     }
+
     /* ganti dengan foto-la-anas.png */
     .hero-photo img {
       width: 100%;
@@ -103,6 +73,7 @@
       object-position: top center;
       display: block;
     }
+
     .hero-photo-placeholder {
       width: 100%;
       height: 100%;
@@ -112,14 +83,16 @@
       align-items: center;
       justify-content: center;
       font-family: var(--font-head);
-      font-size: 4rem;
       font-weight: 700;
+      font-size: 5rem;
       color: var(--red);
     }
+
     .hero-photo-gradient {
       position: absolute;
-      top: 0; right: 0;
-      width: 40%;
+      top: 0;
+      right: 0;
+      width: 120px;
       height: 100%;
       background: linear-gradient(to right, transparent, var(--bg));
       pointer-events: none;
@@ -129,755 +102,847 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 5rem 5rem 5rem 3.5rem;
+      padding: 80px 64px 80px 48px;
     }
 
-    .hero-location {
+    .hero-label {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
       color: var(--red);
-      margin-bottom: 1.5rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
     }
 
     .hero-name {
       font-family: var(--font-head);
       font-weight: 700;
-      font-size: clamp(1.8rem, 3.5vw, 3rem);
-      line-height: 1.15;
-      margin-bottom: 0.5rem;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 12px;
     }
 
     .hero-nickname {
       font-family: var(--font-label);
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--green);
-      letter-spacing: 0.1em;
-      margin-bottom: 1.5rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 32px;
     }
 
     .hero-tagline {
       font-family: var(--font-head);
-      font-weight: 700;
+      font-weight: 300;
       font-size: 1.05rem;
       color: var(--text-muted);
-      margin-bottom: 1.25rem;
+      margin-bottom: 20px;
+      font-style: italic;
     }
 
-    .hero-bio {
+    .hero-para {
       font-size: 1rem;
       color: var(--text-muted);
-      max-width: 480px;
-      margin-bottom: 2.5rem;
+      line-height: 1.85;
+      max-width: 440px;
+      margin-bottom: 40px;
     }
 
-    .hero-buttons {
+    .hero-cta {
       display: flex;
-      gap: 1rem;
+      gap: 16px;
       flex-wrap: wrap;
     }
 
-    /* ============================
-       SECTION 2 — TENTANG
-    ============================= */
-    #tentang {
-      background: var(--bg-alt);
-      padding: 7rem 6rem;
+    .btn-solid {
+      background: var(--red);
+      color: var(--text);
+      border: 2px solid var(--red);
+      padding: 12px 28px;
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-solid:hover { background: transparent; color: var(--red); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 2px solid rgba(240, 237, 230, 0.4);
+      padding: 12px 28px;
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--text); }
+
+    /* SECTION WRAPPER */
+    .section-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
     }
 
-    .section-title {
+    section { padding: 100px 0; }
+
+    /* KERESAHAN */
+    #keresahan {
+      background: var(--bg-alt);
+      padding: 100px 0;
+    }
+
+    .keresahan-grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .keresahan-left h2 {
       font-family: var(--font-head);
       font-weight: 700;
       font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 3.5rem;
+      line-height: 1.15;
+      margin-bottom: 40px;
+    }
+
+    .keresahan-left p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      line-height: 1.85;
+      margin-bottom: 24px;
+    }
+
+    .keresahan-tagline {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      color: var(--red);
+      line-height: 1.1;
+      margin-top: 40px;
+    }
+
+    .keresahan-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 8px;
+    }
+
+    .keresahan-box {
+      border: 1px solid var(--red);
+      padding: 24px;
+    }
+
+    .keresahan-box-word {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .keresahan-box-desc {
+      font-family: var(--font-label);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* TENTANG */
+    #tentang {
+      background: var(--bg);
+    }
+
+    .tentang-label {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
 
     .tentang-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5rem;
+      gap: 80px;
       align-items: start;
+      margin-top: 40px;
     }
 
-    .tentang-text p {
+    .tentang-left p {
       font-size: 1rem;
       color: var(--text-muted);
-      margin-bottom: 1.5rem;
+      line-height: 1.85;
+      margin-bottom: 24px;
     }
-    .tentang-text p:last-child { margin-bottom: 0; }
+
+    .tentang-left p:last-child { margin-bottom: 0; }
 
     .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      border-left: 1px solid rgba(240,237,230,0.12);
-      padding-left: 2rem;
+      position: relative;
+      padding-left: 32px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: rgba(240, 237, 230, 0.12);
     }
 
     .timeline-item {
       position: relative;
-      padding-bottom: 2rem;
+      margin-bottom: 36px;
     }
-    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item:last-child { margin-bottom: 0; }
 
-    .timeline-item::before {
-      content: '';
+    .timeline-dot {
       position: absolute;
-      left: -2.35rem;
-      top: 0.45rem;
-      width: 8px;
-      height: 8px;
+      left: -29px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       background: var(--red);
+      border: 2px solid var(--red);
+    }
+
+    .timeline-dot.pulse {
+      animation: pulse-dot 1.8s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%   { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.5); }
+      70%  { box-shadow: 0 0 0 10px rgba(192, 57, 43, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0); }
     }
 
     .timeline-year {
       font-family: var(--font-label);
-      font-size: 0.65rem;
+      font-size: 0.72rem;
       color: var(--red);
-      letter-spacing: 0.12em;
-      margin-bottom: 0.2rem;
+      margin-bottom: 4px;
     }
 
-    .timeline-desc {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    /* ============================
-       SECTION 3 — YANG DIBANGUN
-    ============================= */
-    #proyek {
-      padding: 7rem 6rem;
-      background: var(--bg);
-    }
-
-    .proyek-header {
-      margin-bottom: 3.5rem;
-    }
-
-    .proyek-subtitle {
+    .timeline-text {
       font-size: 0.95rem;
       color: var(--text-muted);
-      margin-top: 0.75rem;
+      line-height: 1.6;
     }
 
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
+    /* RISE AND SHINE */
+    #rise {
+      background: var(--red);
+      padding: 100px 0;
     }
+
+    #rise * { color: var(--text); }
+
+    .rise-heading {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 40px;
+    }
+
+    .rise-para {
+      font-size: 1rem;
+      line-height: 1.85;
+      opacity: 0.85;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    .rise-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 48px 0;
+    }
+
+    .pillar-box {
+      border: 1px solid rgba(240, 237, 230, 0.3);
+      padding: 28px 24px;
+    }
+
+    .pillar-word {
+      font-family: var(--font-label);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 12px;
+    }
+
+    .pillar-desc {
+      font-size: 0.95rem;
+      opacity: 0.75;
+      line-height: 1.65;
+    }
+
+    .btn-rise {
+      display: inline-block;
+      background: transparent;
+      color: var(--red) !important;
+      border: 2px solid var(--text);
+      background: var(--text);
+      padding: 14px 32px;
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-rise:hover { background: transparent; color: var(--text) !important; }
+
+    /* YANG SEDANG DIBANGUN */
+    #bangun {
+      background: var(--bg-alt);
+    }
+
+    .bangun-header h2 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-bottom: 12px;
+    }
+
+    .bangun-subhead {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 64px;
+    }
+
+    .ekosistem {
+      margin-bottom: 64px;
+    }
+
+    .ekosistem-label {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .ekosistem-label.green { color: var(--green); }
+    .ekosistem-label.red   { color: var(--red); }
+
+    .ekosistem-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .cards-row {
+      display: grid;
+      gap: 20px;
+    }
+
+    .cards-row.three { grid-template-columns: repeat(3, 1fr); }
+    .cards-row.two   { grid-template-columns: repeat(2, 1fr); }
 
     .card {
-      background: #141414;
-      border: 1px solid rgba(240,237,230,0.07);
-      border-radius: 4px;
-      padding: 2rem;
-      position: relative;
-      transition: border-color 0.3s, transform 0.3s;
+      background: #151515;
+      border: 1px solid rgba(240, 237, 230, 0.06);
+      padding: 28px;
+      transition: border-color 0.2s;
     }
-    .card:hover {
-      border-color: rgba(240,237,230,0.18);
-      transform: translateY(-3px);
-    }
-
-    .card-accent-line {
-      width: 3rem;
-      height: 2px;
-      margin-bottom: 1.25rem;
-    }
-    .card-accent-line.green { background: var(--green); }
-    .card-accent-line.red { background: var(--red); }
-    .card-accent-line.white { background: rgba(240,237,230,0.5); }
+    .card:hover { border-color: rgba(240, 237, 230, 0.18); }
 
     .card-label {
       font-family: var(--font-label);
-      font-size: 0.6rem;
-      letter-spacing: 0.15em;
+      font-size: 0.65rem;
       color: var(--text-muted);
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 0.6rem;
+      margin-bottom: 12px;
     }
 
     .card-title {
       font-family: var(--font-head);
       font-weight: 700;
-      font-size: 1.25rem;
-      margin-bottom: 0.75rem;
+      font-size: 1.15rem;
+      margin-bottom: 12px;
     }
 
     .card-desc {
       font-size: 0.9rem;
       color: var(--text-muted);
-      margin-bottom: 1.25rem;
+      line-height: 1.75;
+      margin-bottom: 20px;
     }
-
-    .card-tagline {
-      font-family: var(--font-label);
-      font-size: 0.7rem;
-      color: var(--text-muted);
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
-
-    .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: auto;
-    }
-
-    .card-link {
-      font-family: var(--font-label);
-      font-size: 0.62rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      letter-spacing: 0.08em;
-      border-bottom: 1px solid rgba(240,237,230,0.2);
-      padding-bottom: 1px;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .card-link:hover { color: var(--text); border-color: var(--text); }
 
     .badge {
-      font-family: var(--font-label);
-      font-size: 0.55rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.65rem;
-      border-radius: 2px;
-    }
-    .badge-green { background: rgba(28,122,80,0.2); color: var(--green); border: 1px solid rgba(28,122,80,0.3); }
-    .badge-red { background: rgba(192,57,43,0.2); color: var(--red); border: 1px solid rgba(192,57,43,0.3); }
-    .badge-white { background: rgba(240,237,230,0.08); color: var(--text-muted); border: 1px solid rgba(240,237,230,0.15); }
-
-    /* ============================
-       SECTION 4 — RISE AND SHINE
-    ============================= */
-    #rise {
-      background: var(--red);
-      padding: 7rem 6rem;
-    }
-
-    #rise .section-title { color: #fff; margin-bottom: 1.5rem; }
-
-    .rise-para {
-      font-size: 1.05rem;
-      color: rgba(255,255,255,0.8);
-      max-width: 640px;
-      margin-bottom: 3.5rem;
-    }
-
-    .pillars {
-      display: flex;
-      gap: 3rem;
-      margin-bottom: 3rem;
-      flex-wrap: wrap;
-    }
-
-    .pillar-word {
-      font-family: var(--font-head);
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #fff;
-      margin-bottom: 0.3rem;
-    }
-
-    .pillar-desc {
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.7);
-    }
-
-    /* ============================
-       SECTION 5 — SIGAP SHOWCASE
-    ============================= */
-    #sigap {
-      padding: 7rem 6rem;
-      background: var(--bg-alt);
-    }
-
-    .sigap-para {
-      font-size: 1rem;
-      color: var(--text-muted);
-      max-width: 580px;
-      margin-bottom: 3rem;
-    }
-
-    .status-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .status-card {
-      background: #141414;
-      border: 1px solid rgba(240,237,230,0.07);
-      border-radius: 4px;
-      padding: 1.5rem;
-    }
-
-    .status-org {
-      font-family: var(--font-head);
-      font-weight: 700;
-      font-size: 0.95rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .status-label {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 0.75rem;
-    }
-
-    .status-badge {
-      font-family: var(--font-label);
-      font-size: 0.55rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0.2rem 0.6rem;
-      border-radius: 2px;
       display: inline-block;
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
     }
-    .status-badge.green { background: rgba(28,122,80,0.2); color: var(--green); border: 1px solid rgba(28,122,80,0.3); }
-    .status-badge.amber { background: rgba(212,160,23,0.2); color: #d4a017; border: 1px solid rgba(212,160,23,0.3); }
-    .status-badge.blue { background: rgba(52,152,219,0.2); color: #3498db; border: 1px solid rgba(52,152,219,0.3); }
 
-    /* ============================
-       SECTION 6 — KONTAK
-    ============================= */
+    .badge.green  { background: rgba(28, 122, 80, 0.2); color: var(--green); }
+    .badge.amber  { background: rgba(201, 155, 50, 0.2); color: #c99b32; }
+
+    .card-link {
+      display: block;
+      font-family: var(--font-label);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      border-top: 1px solid rgba(240, 237, 230, 0.07);
+      padding-top: 16px;
+      transition: color 0.2s;
+    }
+    .card-link:hover { color: var(--text); }
+    .card-link::before { content: '↗  '; }
+
+    /* KONTAK */
     #kontak {
-      padding: 7rem 6rem;
       background: var(--bg-dark);
     }
 
     .kontak-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5rem;
+      gap: 80px;
       align-items: start;
     }
 
-    .kontak-para {
+    .kontak-left h2 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 24px;
+    }
+
+    .kontak-left p {
       font-size: 1rem;
       color: var(--text-muted);
-      margin-bottom: 2rem;
+      line-height: 1.85;
+      margin-bottom: 36px;
     }
 
-    .contact-card {
-      background: #171717;
-      border: 1px solid rgba(240,237,230,0.07);
-      border-radius: 4px;
-      padding: 2rem;
+    .kontak-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
     }
 
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      padding: 0.9rem 0;
-      border-bottom: 1px solid rgba(240,237,230,0.07);
-    }
-    .contact-item:last-child { border-bottom: none; }
-
-    .contact-platform {
-      font-family: var(--font-label);
-      font-size: 0.62rem;
-      color: var(--text-muted);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      min-width: 80px;
-      margin-top: 0.15rem;
-    }
-
-    .contact-value {
-      font-size: 0.9rem;
-      color: var(--text);
-    }
-    .contact-value a {
-      color: inherit;
+    .kontak-card {
+      background: #161616;
+      border: 1px solid rgba(240, 237, 230, 0.06);
+      padding: 20px;
       text-decoration: none;
-      border-bottom: 1px solid rgba(240,237,230,0.2);
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .contact-value a:hover {
       color: var(--text);
-      border-color: var(--text);
+      transition: border-color 0.2s;
+      display: block;
+    }
+    .kontak-card:hover { border-color: rgba(240, 237, 230, 0.2); }
+
+    .kontak-card-icon {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
     }
 
-    .quote-block {
-      padding: 2rem;
-      border-left: 2px solid var(--red);
+    .kontak-card-label {
+      font-family: var(--font-label);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
     }
 
-    .quote-text {
+    .kontak-card-value {
+      font-size: 0.88rem;
+      color: var(--text);
+      word-break: break-all;
+    }
+
+    .kontak-quote-box {
+      border: 1px solid var(--red);
+      padding: 40px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .kontak-quote {
+      font-family: var(--font-head);
+      font-weight: 300;
       font-size: 1.05rem;
+      line-height: 1.85;
       color: var(--text-muted);
       font-style: italic;
-      line-height: 1.9;
     }
 
-    /* ============================
-       FOOTER
-    ============================= */
+    /* FOOTER */
     footer {
       background: var(--bg-darkest);
-      padding: 1.75rem 6rem;
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid rgba(240,237,230,0.05);
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .footer-left {
       font-family: var(--font-label);
-      font-size: 0.6rem;
+      font-size: 0.68rem;
       color: var(--text-muted);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.05em;
     }
 
     .footer-right {
-      font-family: var(--font-label);
-      font-size: 0.6rem;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.85rem;
       color: var(--red);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.02em;
     }
 
-    /* ============================
-       RESPONSIVE — 768px
-    ============================= */
+    /* MOBILE */
     @media (max-width: 768px) {
+      .section-wrap { padding: 0 24px; }
+      section { padding: 72px 0; }
+
       #hero {
         grid-template-columns: 1fr;
-        grid-template-rows: 55vw 1fr;
-        min-height: auto;
+        min-height: unset;
       }
 
-      .hero-photo { height: 55vw; min-height: unset; }
-      .hero-photo-placeholder { min-height: 55vw; font-size: 3rem; }
-      .hero-photo-gradient {
-        width: 100%;
-        height: 40%;
-        top: auto; bottom: 0; right: 0;
-        background: linear-gradient(to top, var(--bg), transparent);
+      .hero-photo {
+        height: 55vw;
+        min-height: 260px;
       }
+
+      .hero-photo-placeholder {
+        min-height: 260px;
+        height: 55vw;
+        font-size: 3.5rem;
+      }
+
+      .hero-photo-gradient { display: none; }
 
       .hero-content {
-        padding: 2.5rem 1.5rem;
+        padding: 48px 24px;
       }
 
-      #tentang,
-      #proyek,
-      #rise,
-      #sigap,
-      #kontak {
-        padding: 4rem 1.5rem;
+      .keresahan-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
       }
 
-      .tentang-grid,
+      .tentang-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .rise-pillars {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-row.three,
+      .cards-row.two {
+        grid-template-columns: 1fr;
+      }
+
       .kontak-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 48px;
       }
 
-      .cards-grid {
-        grid-template-columns: 1fr;
+      .kontak-quote-box {
+        height: auto;
+        padding: 28px;
       }
 
-      .status-cards {
-        grid-template-columns: 1fr;
-      }
-
-      .pillars {
+      .footer-inner {
         flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      footer {
-        flex-direction: column;
-        gap: 0.75rem;
         text-align: center;
-        padding: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- ============================
-       SECTION 1 — HERO
-  ============================= -->
+  <!-- ====== SECTION 1: HERO ====== -->
   <section id="hero">
     <div class="hero-photo">
       <!-- ganti dengan foto-la-anas.png -->
       <img
         src="foto-la-anas.png"
-        alt="Muhamad Anas Kirsam Nur"
+        alt="Foto Muhamad Anas Kirsam Nur"
         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
       />
       <div class="hero-photo-placeholder" style="display:none;">LA</div>
       <div class="hero-photo-gradient"></div>
     </div>
 
-    <div class="hero-content fade-in">
-      <p class="label hero-location">Kendari, Sulawesi Tenggara · 2002</p>
+    <div class="hero-content">
+      <p class="hero-label">KENDARI, SULAWESI TENGGARA · 2002</p>
       <h1 class="hero-name">Muhamad Anas Kirsam Nur</h1>
       <p class="hero-nickname">La Anas</p>
       <p class="hero-tagline">Masih belajar. Tidak berhenti bergerak.</p>
-      <p class="hero-bio">
-        ASN muda dari Kendari yang sedang mencoba membangun sesuatu yang bermanfaat — dari dalam sistem, bersama masyarakat, pelan tapi nyata.
-      </p>
-      <div class="hero-buttons">
-        <a href="#tentang" class="btn btn-red">Kenali Saya</a>
-        <a href="https://wa.me/6285279722605" target="_blank" rel="noopener" class="btn btn-outline">Hubungi Saya</a>
+      <p class="hero-para">Saya hanya anak muda dari Kendari yang suatu hari memutuskan untuk berhenti menunggu dan mulai bergerak. Ini perjalanannya.</p>
+      <div class="hero-cta">
+        <a href="#tentang" class="btn-solid">Kenali Saya</a>
+        <a href="https://wa.me/6285279722605" class="btn-outline" target="_blank" rel="noopener">Mari Ngobrol</a>
       </div>
     </div>
   </section>
 
-  <!-- ============================
-       SECTION 2 — TENTANG
-  ============================= -->
+  <!-- ====== SECTION 2: KERESAHAN ====== -->
+  <section id="keresahan">
+    <div class="section-wrap">
+      <div class="keresahan-grid">
+        <div class="keresahan-left fade-in">
+          <h2>Kita hidup di zaman yang aneh.</h2>
+          <p>Setiap hari kita dikepung informasi yang tidak menghasilkan apapun. Berita korupsi pejabat, drama selebriti, konten receh yang bikin kita scroll tanpa sadar sudah dua jam berlalu. Algoritma kita sudah dikuasai hal-hal yang tidak membangun.</p>
+          <p>Yang lebih mengkhawatirkan bukan informasinya. Tapi efeknya. Kita tumbuh dengan mental penonton. Melihat masalah, berkomentar, lalu lanjut scroll. Sistem disalahkan. Keadaan disalahkan. Tapi tidak ada yang turun dan mulai.</p>
+          <p>Indonesia Emas 2045 bukan soal infrastruktur saja. Dia butuh kita yang optimis, bersatu, dan mau bergerak nyata. Bukan yang paling pintar. Tapi yang tidak mau diam.</p>
+          <p class="keresahan-tagline">The world won't fix itself.</p>
+        </div>
+
+        <div class="keresahan-right fade-in">
+          <div class="keresahan-box">
+            <div class="keresahan-box-word">Algoritma</div>
+            <div class="keresahan-box-desc">Sudah dikuasai hal yang tidak membangun</div>
+          </div>
+          <div class="keresahan-box">
+            <div class="keresahan-box-word">Generasi</div>
+            <div class="keresahan-box-desc">Terlalu nyaman jadi penonton</div>
+          </div>
+          <div class="keresahan-box">
+            <div class="keresahan-box-word">2045</div>
+            <div class="keresahan-box-desc">Butuh kita yang mau bergerak sekarang</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECTION 3: TENTANG ====== -->
   <section id="tentang">
-    <h2 class="section-title fade-in">Dari Kendari.</h2>
-    <div class="tentang-grid">
-      <div class="tentang-text fade-in">
-        <p>
-          Nama saya Muhamad Anas Kirsam Nur. Lahir dan besar di Kendari, Sulawesi Tenggara. Saya masuk IPDN bukan karena sudah tahu mau jadi apa — tapi karena percaya bahwa melayani adalah pilihan yang layak diperjuangkan.
-        </p>
-        <p>
-          Sekarang saya bekerja di Setda Provinsi Sultra. Di sela-sela pekerjaan, saya mencoba membangun beberapa hal kecil — sistem digital untuk pemerintahan, komunitas untuk anak muda, dan platform belajar untuk yang mau masuk kedinasan. Semuanya masih dalam proses. Masih banyak yang harus diperbaiki.
-        </p>
-        <p>
-          Saya percaya bahwa perubahan tidak harus datang dari orang yang paling hebat. Cukup dari orang yang mau mulai — dan tidak berhenti meski jalannya tidak selalu jelas.
-        </p>
-      </div>
+    <div class="section-wrap">
+      <p class="tentang-label fade-in">Tentang</p>
+      <h2 class="fade-in" style="font-family: var(--font-head); font-weight: 700; font-size: clamp(1.8rem, 3.5vw, 2.6rem);">Sedikit tentang saya.</h2>
 
-      <div class="timeline fade-in">
-        <div class="timeline-item">
-          <p class="timeline-year">2002</p>
-          <p class="timeline-desc">Lahir di Kendari, Sulawesi Tenggara</p>
+      <div class="tentang-grid">
+        <div class="tentang-left fade-in">
+          <p>Nama saya Muhamad Anas Kirsam Nur. Lahir dan besar di Kendari, Sulawesi Tenggara. Saya masuk IPDN bukan karena sudah tahu mau jadi apa. Tapi karena percaya bahwa melayani adalah pilihan yang layak diperjuangkan.</p>
+          <p>Sekarang saya bekerja di Setda Provinsi Sultra. Di sela pekerjaan saya mencoba membangun beberapa hal kecil. Semuanya masih dalam proses. Masih banyak yang harus diperbaiki. Tapi saya lebih suka bergerak sambil belajar daripada menunggu sempurna dulu.</p>
+          <p>Saya percaya perubahan tidak harus datang dari orang yang paling hebat. Cukup dari orang yang mau mulai dan tidak berhenti meski jalannya tidak selalu jelas.</p>
         </div>
-        <div class="timeline-item">
-          <p class="timeline-year">2020</p>
-          <p class="timeline-desc">Masuk IPDN, memilih jalan pengabdian</p>
-        </div>
-        <div class="timeline-item">
-          <p class="timeline-year">2024</p>
-          <p class="timeline-desc">Lulus, mulai kerja di Setda Prov. Sultra</p>
-        </div>
-        <div class="timeline-item">
-          <p class="timeline-year">2025</p>
-          <p class="timeline-desc">Mulai bangun Sigap Sultra dari nol</p>
-        </div>
-        <div class="timeline-item">
-          <p class="timeline-year">2026</p>
-          <p class="timeline-desc">Masih bergerak, masih belajar</p>
+
+        <div class="fade-in">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2002</div>
+              <div class="timeline-text">Lahir di Kendari, Sulawesi Tenggara</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2020</div>
+              <div class="timeline-text">Masuk IPDN, memilih jalan pengabdian</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2024</div>
+              <div class="timeline-text">Lulus, mulai kerja di Setda Prov. Sultra</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2025</div>
+              <div class="timeline-text">Mulai bangun Sigap Sultra dari nol</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot pulse"></div>
+              <div class="timeline-year">2026</div>
+              <div class="timeline-text">Masih bergerak, masih belajar</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================
-       SECTION 3 — YANG DIBANGUN
-  ============================= -->
-  <section id="proyek">
-    <div class="proyek-header fade-in">
-      <h2 class="section-title" style="margin-bottom:0.5rem;">Yang sedang saya coba bangun.</h2>
-      <p class="proyek-subtitle">Semuanya masih dalam perjalanan. Tapi bergerak.</p>
-    </div>
-
-    <div class="cards-grid">
-
-      <!-- Kartu 1 — Sigap Sultra -->
-      <div class="card fade-in">
-        <div class="card-accent-line green"></div>
-        <p class="card-label">Inovasi Pemerintahan</p>
-        <h3 class="card-title">Sigap Sultra</h3>
-        <p class="card-desc">
-          Sistem digital untuk administrasi pemerintahan berbasis AI. Dimulai dari kebutuhan nyata yang saya lihat setiap hari di tempat kerja.
-        </p>
-        <div class="card-footer">
-          <a href="https://sigap-partner.vercel.app" target="_blank" rel="noopener" class="card-link">sigap-partner.vercel.app</a>
-          <span class="badge badge-green">Berjalan</span>
-        </div>
-      </div>
-
-      <!-- Kartu 2 — Rise & Shine -->
-      <div class="card fade-in">
-        <div class="card-accent-line red"></div>
-        <p class="card-label">Komunitas</p>
-        <h3 class="card-title">Rise &amp; Shine</h3>
-        <p class="card-desc">
-          Komunitas untuk siapapun yang ingin ikut menyelesaikan masalah nyata di sekitar mereka — bukan hanya membicarakannya.
-        </p>
-        <p class="card-tagline">"The world won't fix itself."</p>
-        <div class="card-footer">
-          <a href="https://instagram.com/riseandshineid" target="_blank" rel="noopener" class="card-link">instagram.com/riseandshineid</a>
-          <span class="badge badge-green">Berkembang</span>
-        </div>
-      </div>
-
-      <!-- Kartu 3 — Corps Praja Academy -->
-      <div class="card fade-in">
-        <div class="card-accent-line green"></div>
-        <p class="card-label">Pendidikan</p>
-        <h3 class="card-title">Corps Praja Academy</h3>
-        <p class="card-desc">
-          Platform belajar untuk adik-adik yang mau masuk kedinasan. Dibuat karena saya tahu betapa sulitnya perjalanan itu.
-        </p>
-        <div class="card-footer">
-          <a href="https://corps-praja-academy.vercel.app" target="_blank" rel="noopener" class="card-link">corps-praja-academy.vercel.app</a>
-          <span class="badge badge-green">Aktif</span>
-        </div>
-      </div>
-
-      <!-- Kartu 4 — Eclipse Asia -->
-      <div class="card fade-in">
-        <div class="card-accent-line white"></div>
-        <p class="card-label">Bisnis</p>
-        <h3 class="card-title">Eclipse Asia</h3>
-        <p class="card-desc">
-          Bisnis kecil yang kami bangun bersama — jersey, merchandise, dan produk komunitas.
-        </p>
-        <div class="card-footer">
-          <a href="https://linktr.ee/EclipseStudio_" target="_blank" rel="noopener" class="card-link">linktr.ee/EclipseStudio_</a>
-          <span class="badge badge-white">Aktif</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================
-       SECTION 4 — RISE AND SHINE FEATURE
-  ============================= -->
+  <!-- ====== SECTION 4: RISE AND SHINE ====== -->
   <section id="rise">
-    <h2 class="section-title fade-in">"The world won't fix itself."</h2>
-    <p class="rise-para fade-in">
-      Rise and Shine lahir dari satu keresahan sederhana — terlalu banyak masalah nyata yang tidak pernah terdengar karena tidak ada yang mau turun dan mendengarnya. Kami mencoba jadi komunitas yang melakukan itu. Bukan yang paling pintar. Tapi yang mau bergerak.
-    </p>
+    <div class="section-wrap">
+      <h2 class="rise-heading fade-in">The world won't fix itself.</h2>
+      <p class="rise-para fade-in">Rise and Shine lahir dari satu keresahan sederhana. Terlalu banyak masalah nyata yang tidak pernah terdengar karena tidak ada yang mau turun dan mendengarnya. Terlalu banyak dari kita yang sebenarnya mau bergerak tapi tidak tahu harus mulai dari mana.</p>
+      <p class="rise-para fade-in">Ini bukan gerakan orang hebat. Ini ruang untuk kita yang bosan jadi penonton. Yang mau saling merangkul, berbagi informasi yang membangun, dan mulai menyelesaikan masalah nyata di sekitar kita. Sekecil apapun itu.</p>
 
-    <div class="pillars fade-in">
-      <div class="pillar">
-        <p class="pillar-word">DENGAR</p>
-        <p class="pillar-desc">Turun ke lapangan. Cari masalah nyata.</p>
+      <div class="rise-pillars fade-in">
+        <div class="pillar-box">
+          <div class="pillar-word">DENGAR</div>
+          <div class="pillar-desc">Turun ke lapangan. Cari masalah nyata.</div>
+        </div>
+        <div class="pillar-box">
+          <div class="pillar-word">DISKUSI</div>
+          <div class="pillar-desc">Duduk bersama. Cari solusi bersama.</div>
+        </div>
+        <div class="pillar-box">
+          <div class="pillar-word">BANGUN</div>
+          <div class="pillar-desc">Eksekusi. Sekecil apapun mulai.</div>
+        </div>
       </div>
-      <div class="pillar">
-        <p class="pillar-word">DISKUSI</p>
-        <p class="pillar-desc">Duduk bersama. Cari solusi bersama.</p>
-      </div>
-      <div class="pillar">
-        <p class="pillar-word">BANGUN</p>
-        <p class="pillar-desc">Eksekusi. Sekecil apapun, mulai.</p>
-      </div>
+
+      <a href="https://instagram.com/riseandshineid" class="btn-rise fade-in" target="_blank" rel="noopener">Ikut Bergerak Bersama</a>
     </div>
-
-    <a href="https://instagram.com/riseandshineid" target="_blank" rel="noopener" class="btn btn-white-outline fade-in">Ikut Bergerak Bersama</a>
   </section>
 
-  <!-- ============================
-       SECTION 5 — SIGAP SHOWCASE
-  ============================= -->
-  <section id="sigap">
-    <h2 class="section-title fade-in">Sigap Sultra — inovasi kecil yang sedang berjalan.</h2>
-    <p class="sigap-para fade-in">
-      Dimulai dari masalah nyata yang saya temui di tempat kerja setiap hari. Masih jauh dari sempurna — tapi sudah mulai dipakai dan sudah mulai membantu.
-    </p>
+  <!-- ====== SECTION 5: YANG SEDANG DIBANGUN ====== -->
+  <section id="bangun">
+    <div class="section-wrap">
+      <div class="bangun-header fade-in">
+        <h2>Yang sedang saya coba bangun.</h2>
+        <p class="bangun-subhead">Semuanya masih dalam perjalanan. Tapi bergerak.</p>
+      </div>
 
-    <div class="status-cards fade-in">
-      <div class="status-card">
-        <p class="status-org">Pemprov Sultra</p>
-        <p class="status-label">Implementasi penuh di lingkungan provinsi</p>
-        <span class="status-badge green">Aktif berjalan</span>
+      <!-- Ekosistem Corps Praja -->
+      <div class="ekosistem fade-in">
+        <div class="ekosistem-label green">EKOSISTEM CORPS PRAJA</div>
+        <div class="ekosistem-desc">Lahir dari dunia kedinasan dan tumbuh bersama.</div>
+
+        <div class="cards-row three">
+          <div class="card">
+            <div class="card-label">Pendidikan</div>
+            <h3 class="card-title">Corps Praja Academy</h3>
+            <p class="card-desc">Platform belajar untuk adik-adik yang mau masuk kedinasan. Dibuat karena saya tahu betapa sulitnya perjalanan itu.</p>
+            <span class="badge green">Aktif</span>
+            <a href="https://corps-praja-academy.vercel.app" class="card-link" target="_blank" rel="noopener">corps-praja-academy.vercel.app</a>
+          </div>
+
+          <div class="card">
+            <div class="card-label">Komunitas Olahraga</div>
+            <h3 class="card-title">Corps Praja Club</h3>
+            <p class="card-desc">Komunitas lari yang lahir di Jatinangor. Karena percaya bahwa fisik dan mental yang kuat adalah fondasi dari apapun yang kita cita-citakan.</p>
+            <span class="badge green">Aktif</span>
+            <a href="https://instagram.com/corpspraja.club" class="card-link" target="_blank" rel="noopener">instagram.com/corpspraja.club</a>
+          </div>
+
+          <div class="card">
+            <div class="card-label">Media</div>
+            <h3 class="card-title">Corps Praja Magazine</h3>
+            <p class="card-desc">Ruang opini dan jurnal dari calon pemimpin bangsa. Suara muda yang selama ini tidak punya panggung.</p>
+            <span class="badge amber">Berkembang</span>
+            <a href="https://instagram.com/corpspraja.magazine" class="card-link" target="_blank" rel="noopener">instagram.com/corpspraja.magazine</a>
+          </div>
+        </div>
       </div>
-      <div class="status-card">
-        <p class="status-org">IMIPAS</p>
-        <p class="status-label">Uji coba terbatas, evaluasi berjalan</p>
-        <span class="status-badge amber">Pilot project</span>
-      </div>
-      <div class="status-card">
-        <p class="status-org">Kab. Batu, Jawa Timur</p>
-        <p class="status-label">Diskusi dan kajian awal</p>
-        <span class="status-badge blue">Dalam penjajakan</span>
+
+      <!-- Ekosistem Rise and Shine -->
+      <div class="ekosistem fade-in">
+        <div class="ekosistem-label red">EKOSISTEM RISE AND SHINE</div>
+        <div class="ekosistem-desc">Untuk semua lapisan. Dari grassroot sampai birokrasi.</div>
+
+        <div class="cards-row two">
+          <div class="card">
+            <div class="card-label">Inovasi Pemerintahan</div>
+            <h3 class="card-title">Sigap Sultra</h3>
+            <p class="card-desc">Sistem digital untuk administrasi pemerintahan berbasis AI. Dimulai dari masalah nyata yang saya lihat setiap hari di tempat kerja.</p>
+            <span class="badge green">Berjalan</span>
+            <a href="https://sigap-partner.vercel.app" class="card-link" target="_blank" rel="noopener">sigap-partner.vercel.app</a>
+          </div>
+
+          <div class="card">
+            <div class="card-label">Bisnis</div>
+            <h3 class="card-title">Eclipse Asia</h3>
+            <p class="card-desc">Bisnis kecil yang kami bangun bersama. Jersey, merchandise, dan produk komunitas.</p>
+            <span class="badge green">Aktif</span>
+            <a href="https://linktr.ee/EclipseStudio_" class="card-link" target="_blank" rel="noopener">linktr.ee/EclipseStudio_</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <a href="https://sigap-partner.vercel.app" target="_blank" rel="noopener" class="btn btn-outline fade-in">Lihat Lebih Lanjut</a>
   </section>
 
-  <!-- ============================
-       SECTION 6 — KONTAK
-  ============================= -->
+  <!-- ====== SECTION 6: KONTAK ====== -->
   <section id="kontak">
-    <h2 class="section-title fade-in">Kalau kamu mau ngobrol.</h2>
+    <div class="section-wrap">
+      <div class="kontak-grid">
+        <div class="kontak-left fade-in">
+          <h2>Kalau kamu mau ngobrol.</h2>
+          <p>Saya tidak punya banyak jawaban. Tapi saya selalu terbuka untuk berdiskusi. Tentang inovasi, tentang daerah, tentang masalah yang mungkin bisa kita selesaikan bersama. Pintu selalu terbuka.</p>
 
-    <div class="kontak-grid">
-      <div class="fade-in">
-        <p class="kontak-para">
-          Saya tidak punya banyak jawaban. Tapi saya selalu terbuka untuk berdiskusi — tentang inovasi, tentang daerah, tentang masalah yang mungkin bisa kita selesaikan bersama. Pintu selalu terbuka.
-        </p>
-        <div class="contact-card">
-          <div class="contact-item">
-            <span class="contact-platform">WhatsApp</span>
-            <span class="contact-value">
-              <a href="https://wa.me/6285279722605" target="_blank" rel="noopener">085279722605</a>
-            </span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-platform">Email</span>
-            <span class="contact-value">
-              <a href="mailto:anasm5201@gmail.com">anasm5201@gmail.com</a>
-            </span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-platform">Instagram</span>
-            <span class="contact-value">
-              <a href="https://instagram.com/anas.kirsamnur" target="_blank" rel="noopener">@anas.kirsamnur</a>
-            </span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-platform">TikTok</span>
-            <span class="contact-value">
-              <a href="https://tiktok.com/@anass.kirsamnur" target="_blank" rel="noopener">@anass.kirsamnur</a>
-            </span>
+          <div class="kontak-links">
+            <a href="https://wa.me/6285279722605" class="kontak-card" target="_blank" rel="noopener">
+              <div class="kontak-card-icon">💬</div>
+              <div class="kontak-card-label">WhatsApp</div>
+              <div class="kontak-card-value">085279722605</div>
+            </a>
+            <a href="mailto:anasm5201@gmail.com" class="kontak-card">
+              <div class="kontak-card-icon">✉️</div>
+              <div class="kontak-card-label">Email</div>
+              <div class="kontak-card-value">anasm5201@gmail.com</div>
+            </a>
+            <a href="https://instagram.com/anas.kirsamnur" class="kontak-card" target="_blank" rel="noopener">
+              <div class="kontak-card-icon">📸</div>
+              <div class="kontak-card-label">Instagram</div>
+              <div class="kontak-card-value">@anas.kirsamnur</div>
+            </a>
+            <a href="https://tiktok.com/@anass.kirsamnur" class="kontak-card" target="_blank" rel="noopener">
+              <div class="kontak-card-icon">🎵</div>
+              <div class="kontak-card-label">TikTok</div>
+              <div class="kontak-card-value">@anass.kirsamnur</div>
+            </a>
           </div>
         </div>
-      </div>
 
-      <div class="fade-in">
-        <div class="quote-block">
-          <p class="quote-text">
-            "Masih banyak yang harus dipelajari.<br />
-            Tapi hari ini lebih baik dari kemarin —<br />
-            dan itu sudah cukup untuk terus melangkah."
-          </p>
+        <div class="fade-in">
+          <div class="kontak-quote-box">
+            <p class="kontak-quote">"Masih banyak yang harus dipelajari. Tapi hari ini lebih baik dari kemarin dan itu sudah cukup untuk terus melangkah."</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ====== FOOTER ====== -->
   <footer>
-    <span class="footer-left">Muhamad Anas Kirsam Nur © 2026 · Kendari, Sulawesi Tenggara</span>
-    <span class="footer-right">The world won't fix itself.</span>
+    <div class="footer-inner">
+      <div class="footer-left">Muhamad Anas Kirsam Nur &copy; 2026 &middot; Kendari, Sulawesi Tenggara</div>
+      <div class="footer-right">The world won't fix itself.</div>
+    </div>
   </footer>
 
   <script>
-    // Fade-in on scroll dengan IntersectionObserver
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
+    // Fade-in on scroll with IntersectionObserver
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
 
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    // Hero fade-in langsung saat load
-    window.addEventListener('load', () => {
-      document.querySelectorAll('#hero .fade-in').forEach(el => {
-        el.classList.add('visible');
-      });
-    });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
   </script>
 
 </body>
