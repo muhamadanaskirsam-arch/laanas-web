@@ -641,11 +641,17 @@
         background: linear-gradient(
           to bottom,
           transparent 0%,
-          transparent 35%,
-          rgba(10,10,10,0.4) 50%,
-          rgba(10,10,10,0.85) 68%,
+          transparent 25%,
+          rgba(10,10,10,0.2) 40%,
+          rgba(10,10,10,0.75) 60%,
+          rgba(10,10,10,0.92) 72%,
           #0A0A0A 82%,
           #0A0A0A 100%
+        ),
+        linear-gradient(
+          to right,
+          rgba(10,10,10,0.35) 0%,
+          transparent 40%
         );
         pointer-events: none;
       }
@@ -664,7 +670,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center top;
+        object-position: center 5%;
       }
 
       .hero-photo-gradient { display: none; }
@@ -702,7 +708,9 @@
 
       .hero-nickname {
         font-size: 0.75rem;
-        color: #1C7A50;
+        color: #8B1A1A;
+        font-weight: 600;
+        letter-spacing: 0.15em;
         margin-bottom: 20px;
       }
 
